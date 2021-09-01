@@ -477,11 +477,36 @@
                 <h1 id="一、jquery"><a href="#一、jquery" class="headerlink" title="一、jquery"></a>一、jquery</h1><blockquote>
 <p>jQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。它提供的 API 易于使用且兼容众多浏览器，这让诸如 HTML 文档遍历和操作、事件处理、动画和 Ajax 操作更加简单。</p>
 </blockquote>
-<p><code>$(document).ready(function()</code><br>        &nbsp;<code>&#123;</code><br>        &nbsp;&nbsp;<code>$(&quot;p&quot;).click(function()&#123;</code><br>        &nbsp;&nbsp;<code>$(this).hide();</code><br>        &nbsp;&nbsp;<code>&#125;);</code><br>        <code> &#125;);</code></p>
-<h2 id="相关项目"><a href="#相关项目" class="headerlink" title="   相关项目"></a>   <a target="_blank" rel="noopener" href="http://www.baidu.com/">相关项目</a></h2><h1 id="二、前端自动化工具"><a href="#二、前端自动化工具" class="headerlink" title="二、前端自动化工具"></a>二、前端自动化工具</h1><h2 id="2-1-gulp"><a href="#2-1-gulp" class="headerlink" title="2.1 gulp"></a>2.1 gulp</h2><h2 id="2-2-webpack"><a href="#2-2-webpack" class="headerlink" title="2.2 webpack"></a>2.2 webpack</h2><hr>
-<h1 id="三、模块化"><a href="#三、模块化" class="headerlink" title="三、模块化"></a>三、模块化</h1><h2 id="3-1"><a href="#3-1" class="headerlink" title="3.1"></a>3.1</h2><h2 id="3-2"><a href="#3-2" class="headerlink" title="3.2"></a>3.2</h2><hr>
-<h1 id="四、前端框架"><a href="#四、前端框架" class="headerlink" title="四、前端框架"></a>四、前端框架</h1><hr>
-<h1 id="五、多端开发"><a href="#五、多端开发" class="headerlink" title="五、多端开发"></a>五、多端开发</h1>
+<h2 id="1-1-jquery选择器与jquery事件"><a href="#1-1-jquery选择器与jquery事件" class="headerlink" title="1.1 jquery选择器与jquery事件"></a>1.1 jquery选择器与jquery事件</h2><p> &nbsp;&nbsp;如以下代码所示，对于p标签元素的事件绑定可以使用$符号的简单形式完成，而不必再去getElementByTagName等原生API，这样无疑是大大加快的开发的效率。<br><code>$(document).ready(function()</code><br>        &nbsp;<code>&#123;</code><br>        &nbsp;&nbsp;<code>$(&quot;p&quot;).click(function()&#123;</code><br>        &nbsp;&nbsp;<code>$(this).hide();</code><br>        &nbsp;&nbsp;<code>&#125;);</code><br>        <code> &#125;);</code></p>
+<h2 id="1-2-jquery-Html与jqyery遍历"><a href="#1-2-jquery-Html与jqyery遍历" class="headerlink" title="1.2 jquery Html与jqyery遍历"></a>1.2 jquery Html与jqyery遍历</h2><blockquote>
+<p>jQuery 遍历，意为”移动”，用于根据其相对于其他元素的关系来”查找”（或选取）HTML 元素。以某项选择开始，并沿着这个选择移动，直到抵达您期望的元素为止。</p>
+</blockquote>
+<p>&nbsp;&nbsp;在项目当中用的最多的方法是siblings()方法，其主要作用让我们在DOM树进行水平遍历。就是当我们需要点击切换显示结果时，我们可以利用这个方法简单实现，而不必自己利用for循环遍历判断哪个需要隐藏哪个需要显示。</p>
+<h2 id="1-3-jquery-Ajax"><a href="#1-3-jquery-Ajax" class="headerlink" title="1.3 jquery Ajax"></a>1.3 jquery Ajax</h2><blockquote>
+<p>AJAX 是与服务器交换数据的技术，它在不重载全部页面的情况下，实现了对部分网页的更新。jQuery 提供多个与 AJAX 有关的方法。通过 jQuery AJAX 方法，您能够使用 HTTP Get 和 HTTP Post 从远程服务器上请求文本、HTML、XML 或 JSON - 同时您能够把这些外部数据直接载入网页的被选元素中。</p>
+</blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Ajax可以请求获取接口传递过来的数据，利用jquery只需要设置简单的参数就可以正确处理，关键参数有data、type和url等，具体内容可以查看以下教程。<br>&nbsp;&nbsp;&nbsp;&nbsp;在项目中曾经利用Ajax获取过验证码和图片，通过对比用户输入的验证码，判断可以正确提交。<br>此外在小程序项目利用uni.request()方法请求过数据。<br><img src="/request.png"></p>
+<h2 id="1-4相关教程网址："><a href="#1-4相关教程网址：" class="headerlink" title="1.4相关教程网址："></a>1.4相关教程网址：</h2><p>   <a target="_blank" rel="noopener" href="https://www.runoob.com/jquery/jquery-tutorial.html">菜鸟教程</a><br>   <a target="_blank" rel="noopener" href="https://www.jquery123.com/">jquery中文文档</a></p>
+<hr>
+<h1 id="二、前端自动化工具"><a href="#二、前端自动化工具" class="headerlink" title="二、前端自动化工具"></a>二、前端自动化工具</h1><h2 id="2-1-gulp"><a href="#2-1-gulp" class="headerlink" title="2.1 gulp"></a>2.1 gulp</h2><blockquote>
+<p>gulp可以进行js，html，css，img的压缩打包，是自动化构建工具，可以将多个js文件或是css压缩成一个文件，并且可以压缩为一行，以此来减少文件体积，加快请求速度和减少请求次数；并且gulp有task定义处理事务，从而构建整体流程，它是基于流的自动化构建工具。</p>
+</blockquote>
+<h2 id="2-2-webpack"><a href="#2-2-webpack" class="headerlink" title="2.2 webpack"></a>2.2 webpack</h2><blockquote>
+<p>Webpack是前端构建工具，实现了模块化开发和文件处理。他的思想就是“万物皆为模块”，它能够将各个模块进行按需加载，不会导致加载了无用或冗余的代码。所以他还有个名字叫前端模块化打包工具。</p>
+</blockquote>
+<h2 id="2-3相关网址"><a href="#2-3相关网址" class="headerlink" title="2.3相关网址"></a>2.3相关网址</h2><p>   gulp官方教程<a target="_blank" rel="noopener" href="https://www.gulpjs.com.cn/">gulp</a></p>
+<hr>
+<h1 id="三、模块化"><a href="#三、模块化" class="headerlink" title="三、模块化"></a>三、模块化</h1><h2 id="3-1什么是模块"><a href="#3-1什么是模块" class="headerlink" title="3.1什么是模块?"></a>3.1什么是模块?</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;将一个复杂的程序依据一定的规则(规范)封装成几个块(文件), 并进行组合在一起。<br>&nbsp;&nbsp;&nbsp;&nbsp;块的内部数据与实现是私有的, 只是向外部暴露一些接口(方法)与外部其它模块通信。</p>
+<h2 id="3-2模块化的好处"><a href="#3-2模块化的好处" class="headerlink" title="3.2模块化的好处"></a>3.2模块化的好处</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;避免命名冲突(减少命名空间污染)<br>&nbsp;&nbsp;&nbsp;&nbsp;更好的分离, 按需加载<br>&nbsp;&nbsp;&nbsp;&nbsp;更高复用性<br>&nbsp;&nbsp;&nbsp;&nbsp;高可维护性</p>
+<hr>
+<h1 id="四、前端框架"><a href="#四、前端框架" class="headerlink" title="四、前端框架"></a>四、前端框架</h1><h2 id="4-1vue"><a href="#4-1vue" class="headerlink" title="4.1vue"></a>4.1vue</h2><blockquote>
+<p>众所周知vue是一个MVVM 渐进式框架，MVVM是vue的设计模式，在vue框架中数据会自动驱动视图。<br>在MVVM架构下，View和Model之间并没有直接的联系，而是通过ViewMode进行交互，Model和ViewModel之间的交互是双向的，因此View数据的变化会同步到Model中，而Model数据的变化也会立即反应到View上。</p>
+</blockquote>
+<hr>
+<h1 id="五、多端开发"><a href="#五、多端开发" class="headerlink" title="五、多端开发"></a>五、多端开发</h1><h2 id="5-1uni-app"><a href="#5-1uni-app" class="headerlink" title="5.1uni-app"></a>5.1uni-app</h2><blockquote>
+<p>uni-app实现了一套代码，同时运行到多个平台。支持iOS模拟器、Android模拟器、H5、微信开发者工具、支付宝小程序Studio、百度开发者工具、字节跳动开发者工具</p>
+</blockquote>
+
                 
             </div>
             <hr/>
@@ -714,18 +739,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/30/%E5%AE%9E%E4%B9%A0/">
+                <a href="/2021/09/01/internship/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="实习心得">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="internship">
                         
-                        <span class="card-title">实习心得</span>
+                        <span class="card-title">internship</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -735,9 +759,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-30
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-01
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -746,7 +770,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
